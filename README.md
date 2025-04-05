@@ -23,7 +23,7 @@ Anaconda is recommended to create this virtual environment.
   
   ## Download Data & Pre-trained Models
   ### Datasets
-  We are using dataset: Motion-X. You could find the download link [[here]]() or in the [motion-x github](https://github.com/IDEA-Research/Motion-X/tree/ce7c869273730152a469e564ee2df94e07117b34/tomato_represenation).   
+  We are using dataset: Motion-X. You could find the download link [[here]](https://drive.google.com/drive/folders/15p0-ljnEzDaTQYrLPHhozZ2ASTJhZ6x-?usp=sharing) or in the [motion-x github](https://github.com/IDEA-Research/Motion-X/tree/ce7c869273730152a469e564ee2df94e07117b34/tomato_represenation).   
 
   
   Download and unzip the dataset files -> Create a dataset folder -> Place related data files in dataset folder:
@@ -84,7 +84,7 @@ Anaconda is recommended to create this virtual environment.
   mkdir ./checkpoints
   ```
     
- #### Download models for motionx from [[here]](). Unzip and place them under checkpoint directory, which should be like
+ #### Download models for motionx from [[here]](https://drive.google.com/drive/folders/15kAFcLZoOOVWfbOF6frC9Dbd63R8ckUh?usp=sharing). Unzip and place them under checkpoint directory, which should be like
 ```
 ./checkpoints/motionx/
 ./checkpoints/motionx/Comp_v6_KLD01/           # Text-to-motion generation model
@@ -107,7 +107,7 @@ python final_evaluations_motionx.py --gpu 0 --only_gt
 This will evaluate the performance on gt of motionx dataset.
 The following table shows the comparison with different evaluators on motionx test set using ground-truth motion sequences.
 
-![Alt Text](docs/motionx-GT.png)
+![Alt Text](docs/clam.png)
 
 
 
@@ -130,9 +130,7 @@ python -u train_tex_mot_match_motionx.py --name text_mot_match --gpu_id 0 --batc
 python final_evaluations_motionx.py --gpu 0 
 ```
 This will evaluate the performance of default motion generator named 'T2M' trained by Chuan Guo.
-The following table shows the evaluation results on motionx test set with 'T2M' algorithms.
 
-<img src="docs/motionx-generators.png" width="50%">
 
 
 ## License
